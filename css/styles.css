@@ -1,0 +1,121 @@
+/*
+
+/* 
+    #FFE66D
+    #FF6B6B
+    #F7FFF7
+    #4ECDC4
+    #1A535C
+/*
+
+/******************** IDs ********************/
+
+#sergio{
+    width: 5%;
+    height: 5%;
+}
+
+/******************** General ********************/
+
+body {
+    background: url(../img/bgblanco.png) repeat;
+    text-align: justify;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 14px;
+}
+
+/******************** Clases ********************/
+
+.header {
+    background-color: #4ECDC4;
+    opacity: 0.5;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    text-shadow: 2px 2px 4px rgb(0,0,0,0.75);
+    font-weight: bolder;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #1A535C;
+    opacity: 0.85;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #F7FFF7;
+    text-shadow: 2px 2px 4px rgb(0,0,0,0.75);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: rgb(128,128,128,0.25);
+    color: #4ECDC4;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: auto;
+    border: 1px solid rgb(211,211,211,0.5);
+    box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+    border-radius: 15px;
+}
+
+.cardTitle {
+    font-size: 24px;
+    padding: 10px 10px 0 10px;
+    background-color: #1A535C;
+    color: white;
+}
+
+.cardBody {
+    padding: 10px;
+    flex: 1 1 100%;
+}
+
+.cardFooter {
+    background: white;
+    border-radius: 0 0 15px 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+.cardFooter a {
+    text-decoration: none;
+    color: #FF6B6B;
+    text-shadow: 2px 2px 4px rgb(0,0,0,0.25);
+}
+    /* Responsive */
+    @media screen and (max-width: 600px) {
+        .container {
+        width: 100%;
+        }
+    }
+
+.footer {
+    background-color: #1A535C;
+    opacity: 0.5;
+    text-align: center;
+    padding: 20px;
+    color: rgb(255,250,250,0.90);
+    text-shadow: 2px 2px 4px rgb(0,0,0,0.75);
+}
+
+/******************** Responsive ********************/
+
+@media screen and (max-width: 600px) {
+    .container { width: 100%; }
+}
